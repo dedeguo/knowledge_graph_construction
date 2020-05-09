@@ -10,14 +10,20 @@ import optimization as optimization  # _freeze as optimization
 import os, math, json
 from sklearn.metrics import classification_report
 
-os.environ['CUDA_VISIBLE_DEVICES'] = '1'
+#使用GPU
+os.environ['CUDA_VISIBLE_DEVICES'] = '0'
 
 # 100167/64 = 1565.1= 1566 * 5 = 7830
 config = {
     "in_1": "./data/train.tf_record",  # 第一个输入为 训练文件
     "in_2": "./data/dev.tf_record",  # 第二个输入为 验证文件
     "bert_config": "./bert_base/bert_config.json",  # bert模型配置文件
-    "init_checkpoint": "./bert_base/bert_model.ckpt",  # 预训练bert模型
+    #!wget https://storage.googleapis.com/bert_models/2018_11_03/chinese_L-12_H-768_A-12.zip
+    #!unzip chinese_L-12_H-768_A-12.zip
+     #!ls chinese_L-12_H-768_A-12
+    # "init_checkpoint": "./bert_base/bert_model.ckpt",  # 预训练bert模型
+    # "bert_config": "./chinese_L-12_H-768_A-12/bert_config.json",  # bert模型配置文件
+    "init_checkpoint": "./chinese_L-12_H-768_A-12/bert_model.ckpt",
     "train_examples_len": 10748,
     "dev_examples_len": 1343,
     "num_labels": 41,
