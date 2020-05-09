@@ -4,12 +4,12 @@
   
   环境：Python 3 & Tensorflow 1.x，如1.14; 
   
-  ## 模型1 一键运行RoBERTa-wwm-large
-  
+  ## 模型1 基于Bert的升级版本RoBERTa模型  
+  一键运行RoBERTa-wwm-large  
   nohup bash run_classifier_roberta_wwm_large.sh &
 
   
-  ## 模型2
+  ## 模型2 基于Bert的实体识别模型 
       
       第一步， 生成tf_record
       修改 data_processor_seq.py 里面 函数的输入输出路径即可
