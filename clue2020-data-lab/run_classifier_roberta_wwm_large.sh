@@ -4,6 +4,9 @@
 # @Last Modified by:   bo.shi
 # @Last Modified time: 2019-12-05 11:23:30
 
+
+# tensorflow-gpu 1.15版本  1.14 2.0+版本都不好使
+
 TASK_NAME="ner"
 MODEL_NAME="chinese_roberta_wwm_large_ext_L-24_H-1024_A-16"
 CURRENT_DIR=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
