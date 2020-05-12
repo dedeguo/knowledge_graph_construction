@@ -141,3 +141,9 @@ gen
 /bilstm-crf-model/outputs/
 /bilstm-crf-model/dataset/cluener/
 /mem-network-model/data/
+/rel-extr/.idea/
+/rel-extr/data/
+/rel-extr/model/ATT_GRU_model-9000.data-00000-of-00001
+/rel-extr/model/ATT_GRU_model-9000.index
+/rel-extr/model/ATT_GRU_model-9000.meta
+/rel-extr/model/checkpoint
